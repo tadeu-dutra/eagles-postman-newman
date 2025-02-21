@@ -1,0 +1,105 @@
+{
+	"id": "f4e1f4fc-adcd-4c06-8efe-6dd05502f538",
+	"values": [
+		{
+			"key": "BaseUrl",
+			"value": "https://quality-eagles.qacoders.dev.br",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "TokenAdm",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "MailAdm",
+			"value": "sysadmin@qacoders.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "PasswordAdm",
+			"value": "1234@Test",
+			"type": "secret",
+			"enabled": true
+		},
+		{
+			"key": "TokenUser",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "FirstName",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "LastName",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "FullName",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "MailUser",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "PasswordUser",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Cpf",
+			"value": "",
+			"type": "secret",
+			"enabled": true
+		},
+		{
+			"key": "idUser",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "TokenInvalid",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "TokenBlank",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "idCompany",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "RegisterCompany",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2025-02-21T19:31:11.662Z",
+	"_postman_exported_using": "Postman/11.33.4"
+}
