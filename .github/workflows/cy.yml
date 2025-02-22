@@ -43,7 +43,7 @@ jobs:
           --globals ./Jamile-QualityEagles.postman_globals.json \
           --delay-request 2 \
           --reporters cli,htmlextra \
-          --reporter-htmlextra-export ./result/Report_Collection_Italo.html
+          --reporter-htmlextra-export ./result/Report_Collection_Jamile.html
 
       - name: Archive Reports
         run: |
