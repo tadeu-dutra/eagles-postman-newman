@@ -34,6 +34,9 @@ jobs:
           --reporters cli,htmlextra \
           --reporter-htmlextra-export ./result/Report_Collection_Italo.html
 
+      - name: Create result directory
+        run: mkdir -p ./result
+        
       - name: Run Collection Jamile
         run: |
           newman run ./Jamile-QualityEagles.postman_collection.json \
