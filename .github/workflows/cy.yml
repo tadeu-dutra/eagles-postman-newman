@@ -10,12 +10,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  mayhem-for-api:
+  build-ubuntu:
     name: Quality Eagles Postman Newman
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
       - name: Check Newman and Node version
         run: |
