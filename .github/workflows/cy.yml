@@ -80,7 +80,7 @@ jobs:
         # Add a wrapper script to make stdout, stderr and errorcode available as outputs
         # wrapper: # optional, default is false
       # - run: inso --version
-      - run: inso run test Tadeu-QualityEagles-Collection_Insomnia_2025-02-24 --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24
+      - run: inso run test Tadeu-QualityEagles-Collection_Insomnia_2025-02-24 --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24 --ci
 
       # - run: echo '${{ toJson(steps.inso_version.outputs) }}'
 
