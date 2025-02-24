@@ -80,7 +80,10 @@ jobs:
         # Add a wrapper script to make stdout, stderr and errorcode available as outputs
         # wrapper: # optional, default is false
       - run: inso --version
-      - run: echo '${{ toJson(steps.inso_version.outputs) }}'
+      - name: Run test suites
+        run: inso run collection Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json -e Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --ci
+
+      # - run: echo '${{ toJson(steps.inso_version.outputs) }}'
 
       # - name: Set up inso
       #   uses: kong/setup-inso@v1
