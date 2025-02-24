@@ -10,8 +10,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  jenkins-test:
-    name: Quality Eagles Postman Newman
+  run-postman-tests:
+    name: Quality Eagles Postman Newman Tests
     runs-on: ubuntu-latest
 
     steps:
@@ -55,8 +55,8 @@ jobs:
         with:
           name: reports
           path: ./result/reports.zip
-  insomnia-test:
-    name: Quality Eagles Insomnia
+  run-insomnia-tests:
+    name: Quality Eagles Insomnia Tests
     runs-on: ubuntu-latest
 
     steps:
@@ -64,7 +64,7 @@ jobs:
         uses: actions/checkout@v4
       - uses: kong/setup-inso@v1
         with:
-          inso-version: 10.3.1
+          inso-version: 2.4.0
       - name: Lint
         run: inso lint spec Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --ci
       - name: Run test suites
