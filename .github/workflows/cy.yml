@@ -79,7 +79,7 @@ jobs:
           compression: gzip
         # Add a wrapper script to make stdout, stderr and errorcode available as outputs
         # wrapper: # optional, default is false
-          
+      - run: inso --version
 
       # - name: Set up inso
       #   uses: kong/setup-inso@v1
