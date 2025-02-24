@@ -62,15 +62,27 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - uses: kong/setup-inso@v1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          # inso-version: 10.3.1
-          inso-version: 2.4.0
-          compression: gzip
+          node-version: '20.18.0'
+
+      - name: Set up inso
+        uses: kong/setup-inso@v1
+        with:
+          inso-version: 10.3.1
       - run: inso --version
-        id: inso_version
-      - run: echo '${{ toJson(steps.inso_version.outputs) }}'
-      # - name: Lint
-        # run: inso lint spec Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --ci
-      - name: Run test suites
-        run: inso run collection Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json -e Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --ci
+      
+      # - uses: kong/setup-inso@v1
+      #   with:
+      #     # inso-version: 10.3.1
+      #     inso-version: 2.4.0
+      #     compression: gzip
+      # - run: inso --version
+      #   id: inso_version
+      # - run: echo '${{ toJson(steps.inso_version.outputs) }}'
+      # # - name: Lint
+      #   # run: inso lint spec Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --ci
+      # - name: Run test suites
+      #   run: inso run collection Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json -e Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --ci
