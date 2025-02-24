@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-ubuntu:
+  jenkins-test:
     name: Quality Eagles Postman Newman
     runs-on: ubuntu-latest
 
@@ -55,13 +55,17 @@ jobs:
         with:
           name: reports
           path: ./result/reports.zip
+  insomnia-test:
+    name: Quality Eagles Insomnia
+    runs-on: ubuntu-latest
 
-#      - name: Execute the collection
-#        run: newman run ./collection_quality_eagles_t13.json --delay-request 2 --reporters cli,htmlextra --reporter-htmlextra-export ./result/Report.html --globals ./globals_quality_eagles_t13.json
-
-
-      # - name: Archive production artifacts
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: report
-      #     path: ./result/Report.html
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - uses: kong/setup-inso@v1
+        with:
+          inso-version: 10.3.1
+      - name: Lint
+        run: inso lint spec Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --ci
+      - name: Run test suites
+        run: inso run test Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --ci
