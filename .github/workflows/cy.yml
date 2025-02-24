@@ -81,7 +81,7 @@ jobs:
         # wrapper: # optional, default is false
       - run: inso --version
       - name: Run test suites
-        run: inso run collection Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json -e Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --ci
+        run: inso run test Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json
 
       # - run: echo '${{ toJson(steps.inso_version.outputs) }}'
 
