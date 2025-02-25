@@ -80,7 +80,9 @@ jobs:
         # Add a wrapper script to make stdout, stderr and errorcode available as outputs
         # wrapper: # optional, default is false
       # - run: inso --version
+      - run: npm install --global insomnia-inso
       - run: inso run collection Tadeu-QualityEagles-Collection_Insomnia_2025-02-24 --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24 --verbose --workingDir ./insomnia-data --ci
+      - run: inso run test Tadeu-QualityEagles-Collection_Insomnia_2025-02-24 --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24 --verbose --workingDir ./insomnia-data --ci
 
       # - run: echo '${{ toJson(steps.inso_version.outputs) }}'
 
