@@ -108,6 +108,10 @@ jobs:
         run: |
           ls -la ./insomnia-data
 
+      - name: Verify CI dir
+        run: |
+          ls -la /home/runner/work/
+
       # - name: Lint
       #   run: inso lint spec "Tadeu-QualityEagles-Collection" -w ./../../../../../.insomnia --ci
 
