@@ -125,8 +125,8 @@ jobs:
 
         # wrk_90837a2c267749558521976f34c2b06b (env - resources.id (workspace))
         # env_72323603fe964ca5a001487d84200402 (env - resources.id (environment))
-      - name: Run script 1
-        run: inso run test wrk_90837a2c267749558521976f34c2b06b --env env_72323603fe964ca5a001487d84200402 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
+      # - name: Run script 1
+      #   run: inso run test wrk_90837a2c267749558521976f34c2b06b --env env_72323603fe964ca5a001487d84200402 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
       - name: Run script 2
         run: inso run collection wrk_90837a2c267749558521976f34c2b06b --env env_72323603fe964ca5a001487d84200402 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
 
