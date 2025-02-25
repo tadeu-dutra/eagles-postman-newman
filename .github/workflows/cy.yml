@@ -61,7 +61,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Print working directory
         run: pwd
@@ -76,11 +76,12 @@ jobs:
 
       - name: Setup inso
         # You may pin to the exact commit or the version.
-        uses: Kong/setup-inso@cf1bf7b12e5d0092399c79025c09eba54d8182f7
+        # uses: Kong/setup-inso@cf1bf7b12e5d0092399c79025c09eba54d8182f7
+        uses: Kong/setup-inso@b724fdcc07124e43ba013363f4ecb07c8ad56ec8
         # uses: Kong/setup-inso@v1
         with:
           # The version of inso to install
-          inso-version: 10.3.1
+          inso-version: 10.1.1
             # The compression algorithm to use. One of: [gzip, bzip]
           compression: gzip
         # Add a wrapper script to make stdout, stderr and errorcode available as outputs
