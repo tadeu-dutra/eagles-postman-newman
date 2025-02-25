@@ -82,6 +82,7 @@ jobs:
       # - run: inso --version
       # - run: npm install
         # run: inso run collection Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --verbose --workingDir ./insomnia-data --ci
+      - name: Run script
         run: inso run test Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --verbose --workingDir ./insomnia-data --ci
 
       # - run: echo '${{ toJson(steps.inso_version.outputs) }}'
