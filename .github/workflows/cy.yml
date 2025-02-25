@@ -92,8 +92,8 @@ jobs:
         run: |
           ls -la /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
       - name: Run script
-        working-directory: /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
-        run: inso run test Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci 
+        # working-directory: /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
+        run: inso run test Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose
 
 
 
