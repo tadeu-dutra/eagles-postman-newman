@@ -129,9 +129,9 @@ jobs:
           ls -la ~/.config/
 
       # ls -la ~/.config/Insomnia
-      - name: Verify .config/GitHub
+      - name: Verify .config/GitHub/ActionsService
         run: |
-          ls -la ~/.config/GitHub
+          ls -la ~/.config/GitHub/ActionsService
 
       - name: Verify .config/configstore
         run: |
