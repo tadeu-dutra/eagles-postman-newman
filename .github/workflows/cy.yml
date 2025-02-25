@@ -80,7 +80,7 @@ jobs:
         # uses: Kong/setup-inso@v1
         with:
           # The version of inso to install
-          inso-version: 10.1.1
+          inso-version: 10.3.1
             # The compression algorithm to use. One of: [gzip, bzip]
           compression: gzip
         # Add a wrapper script to make stdout, stderr and errorcode available as outputs
@@ -105,7 +105,7 @@ jobs:
 
       - name: Run script
         # working-directory: /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
-        run: inso run test "Tadeu-QualityEagles-Collection_Insomnia_2025-02-24" --env "Tadeu-QualityEagles-Globals_Insomnia_2025-02-24" --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose
+        run: inso run "Tadeu-QualityEagles-Collection_Insomnia_2025-02-24" --env "Tadeu-QualityEagles-Globals_Insomnia_2025-02-24" --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose
 
 
 
