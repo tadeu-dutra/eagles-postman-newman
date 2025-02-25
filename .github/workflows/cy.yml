@@ -76,8 +76,8 @@ jobs:
 
       - name: Setup inso
         # You may pin to the exact commit or the version.
-        # uses: Kong/setup-inso@cf1bf7b12e5d0092399c79025c09eba54d8182f7
-        uses: Kong/setup-inso@b724fdcc07124e43ba013363f4ecb07c8ad56ec8
+        uses: Kong/setup-inso@cf1bf7b12e5d0092399c79025c09eba54d8182f7
+        # uses: Kong/setup-inso@b724fdcc07124e43ba013363f4ecb07c8ad56ec8
         # uses: Kong/setup-inso@v1
         with:
           # The version of inso to install
