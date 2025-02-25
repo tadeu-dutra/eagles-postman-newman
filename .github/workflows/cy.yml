@@ -66,8 +66,8 @@ jobs:
       - name: Print working directory
         run: pwd
 
-      - name: Change to correct directory
-        run: cd /home/runner/work/eagles-postman-newman
+      # - name: Change to correct directory
+      #   run: cd /home/runner/work/eagles-postman-newman
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
