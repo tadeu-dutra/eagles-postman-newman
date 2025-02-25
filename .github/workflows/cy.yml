@@ -93,6 +93,12 @@ jobs:
       - name: Print inso printOptions
         run: inso --printOptions
 
+      - name: Print inso help
+        run: inso --help
+
+      - name: Print inso run help
+        run: inso run --help
+
       - name: Verify directory
         run: |
           ls -la /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
