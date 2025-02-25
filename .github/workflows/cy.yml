@@ -101,7 +101,7 @@ jobs:
 
       - name: Run script
         # working-directory: /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
-        run: inso run collection "/home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data/Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json" --env "/home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data/Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json" --verbose
+        run: sudo inso run test Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose
 
 
 
