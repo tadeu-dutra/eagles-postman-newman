@@ -90,7 +90,6 @@ jobs:
         # run: inso run collection Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --verbose --workingDir ./insomnia-data --ci
       - name: Verify directory
         run: |
-          pwd
           ls -la /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
       - name: Run script
         working-directory: /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
