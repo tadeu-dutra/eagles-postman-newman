@@ -90,8 +90,8 @@ jobs:
       - name: Print inso version
         run: inso --version
 
-      - name: Print inso printOptions
-        run: inso --printOptions
+      # - name: Print inso printOptions
+      #   run: inso --printOptions
 
       - name: Print inso help
         run: inso --help
