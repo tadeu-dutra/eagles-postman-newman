@@ -124,7 +124,7 @@ jobs:
       #   run: inso lint spec "Tadeu-QualityEagles-Collection" -w ./../../../../../.insomnia --ci
 
       - name: Run script
-        run: inso run test wrk_e1e1ad06132e4625bddace0569de4612 --env wrk_90837a2c267749558521976f34c2b06b -w /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
+        run: inso run collection wrk_e1e1ad06132e4625bddace0569de4612 --env wrk_90837a2c267749558521976f34c2b06b -w /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
         # run: inso run test Tadeu-QualityEagles-Collection.json --env Tadeu-QualityEagles-Globals.json --workingDir ./insomnia-data --verbose --ci
 
         # working-directory: /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
