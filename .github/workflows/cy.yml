@@ -128,9 +128,14 @@ jobs:
         run: |
           ls -la ~/.config/
 
-      - name: Verify .config/Insomnia
+      # ls -la ~/.config/Insomnia
+      - name: Verify .config/GitHub
         run: |
-          ls -la ~/.config/Insomnia
+          ls -la ~/.config/GitHub
+
+      - name: Verify .config/configstore
+        run: |
+          ls -la ~/.config/configstore
 
       # - name: Lint
       #   run: inso lint spec "Tadeu-QualityEagles-Collection" -w ./../../../../../.insomnia --ci
