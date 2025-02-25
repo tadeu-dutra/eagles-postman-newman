@@ -157,8 +157,11 @@ jobs:
 
       # - name: Run script 10
       #   run: inso run collection fld_fece2676fd8e413991a1a724ba6d8151 --env env_2b2ddd0cd9598ca8550efea5f2b0771fa6ea0c29 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
-      - name: Run script 11
-        run: inso run test fld_fece2676fd8e413991a1a724ba6d8151 --env env_2b2ddd0cd9598ca8550efea5f2b0771fa6ea0c29 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
+      # - name: Run script 11
+      #   run: inso run test fld_fece2676fd8e413991a1a724ba6d8151 --env env_2b2ddd0cd9598ca8550efea5f2b0771fa6ea0c29 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
+
+      - name: Run script 13
+        run: inso run test wrk_e1e1ad06132e4625bddace0569de4612 --env wrk_90837a2c267749558521976f34c2b06b --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
 
 
         # run: inso run test wrk_90837a2c267749558521976f34c2b06b --env env_72323603fe964ca5a001487d84200402 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
