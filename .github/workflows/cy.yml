@@ -90,6 +90,9 @@ jobs:
       - name: Print inso version
         run: inso --version
 
+      - name: Print inso printOptions
+        run: inso --printOptions
+
       - name: Verify directory
         run: |
           ls -la /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
@@ -182,7 +185,7 @@ jobs:
       #   run: inso run test req_e8b5e823d07f4568a8abd4bcea8953f7 --workingDir ./insomnia-data
 
       - name: Run script 15
-        run: inso run test wrk_e1e1ad06132e4625bddace0569de4612 --env env_2b2ddd0cd9598ca8550efea5f2b0771fa6ea0c29 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
+        run: inso run test wrk_e1e1ad06132e4625bddace0569de4612 --env env_2b2ddd0cd9598ca8550efea5f2b0771fa6ea0c29 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --printOptions --ci
 
 
         # run: inso run test wrk_90837a2c267749558521976f34c2b06b --env env_72323603fe964ca5a001487d84200402 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
