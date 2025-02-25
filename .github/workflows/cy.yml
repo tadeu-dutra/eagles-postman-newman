@@ -104,9 +104,15 @@ jobs:
         run: |
           ls -la /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
 
+      - name: Verify relative path
+        run: |
+          ls -la ./insomnia-data
+
       - name: Run script
+        run: inso run collection "Tadeu-QualityEagles-Collection" --env "Tadeu-QualityEagles-Globals" --workingDir ./insomnia-data --verbose --ci
+
         # working-directory: /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
-        run: inso run collection "Tadeu-QualityEagles-Collection" --env "Tadeu-QualityEagles-Globals" --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
+        # run: inso run collection "Tadeu-QualityEagles-Collection" --env "Tadeu-QualityEagles-Globals" --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
 
 
 
