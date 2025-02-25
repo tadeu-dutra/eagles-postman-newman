@@ -46,6 +46,14 @@ jobs:
           --reporters cli,htmlextra \
           --reporter-htmlextra-export ./result/Report_Collection_Jamile.html
 
+      - name: Run Collection Novo
+        run: |
+          newman run ./insomnia-data/Tadeu-QualityEagles-Collection.json \
+          --globals ./insomnia-data/Tadeu-QualityEagles-Globals.json \
+          --delay-request 2 \
+          --reporters cli,htmlextra \
+          --reporter-htmlextra-export ./result/Report_Collection_Tadeu.html
+
       - name: Archive Reports
         run: |
           zip -r ./result/reports.zip ./result/*.html
