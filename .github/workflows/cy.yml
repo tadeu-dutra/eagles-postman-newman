@@ -109,7 +109,7 @@ jobs:
           ls -la ./insomnia-data
 
       - name: Lint
-        run: inso lint spec "Tadeu-QualityEagles-Collection" -w ./../../insomnia-data --ci
+        run: inso lint spec "Tadeu-QualityEagles-Collection" -w ./../../../insomnia-data --ci
 
       # - name: Run script
       #   run: inso run test wrk_e1e1ad06132e4625bddace0569de4612 --env wrk_90837a2c267749558521976f34c2b06b --verbose --ci
