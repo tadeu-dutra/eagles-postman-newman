@@ -67,7 +67,8 @@ jobs:
         run: pwd
 
       - name: Change to correct directory
-        run: cd /home/runner/work/eagles-postman-newman
+        run: cd /home/runner/work/eagles-postman-newman/insomnia-data
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -92,7 +93,7 @@ jobs:
           pwd
           ls -la
       - name: Run script
-        working-directory: /home/runner/work/eagles-postman-newman
+        working-directory: /home/runner/work/eagles-postman-newman/insomnia-data
         run: inso run test Tadeu-QualityEagles-Collection_Insomnia_2025-02-24.json --env Tadeu-QualityEagles-Globals_Insomnia_2025-02-24.json --verbose --workingDir ./insomnia-data --ci
 
 
