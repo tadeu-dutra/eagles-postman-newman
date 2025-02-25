@@ -123,16 +123,26 @@ jobs:
       # - name: Lint
       #   run: inso lint spec "Tadeu-QualityEagles-Collection" -w ./../../../../../.insomnia --ci
 
-      - name: Run script
         # wrk_90837a2c267749558521976f34c2b06b (env - resources.id (workspace))
         # env_72323603fe964ca5a001487d84200402 (env - resources.id (environment))
-        
+      - name: Run script 1
+        run: inso run test wrk_90837a2c267749558521976f34c2b06b --env env_72323603fe964ca5a001487d84200402 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
+      - name: Run script 2
+        run: inso run collection wrk_90837a2c267749558521976f34c2b06b --env env_72323603fe964ca5a001487d84200402 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
+
         # req_6ee84fa004a44a0b9daa641813baac6a (col - resources.id (workspace))
         # wrk_90837a2c267749558521976f34c2b06b (env - resources.id (workspace))
+      - name: Run script 3
+        run: inso run test req_6ee84fa004a44a0b9daa641813baac6a --env wrk_90837a2c267749558521976f34c2b06b --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
+      - name: Run script 4
+        run: inso run collection req_6ee84fa004a44a0b9daa641813baac6a --env wrk_90837a2c267749558521976f34c2b06b --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
 
         # req_6ee84fa004a44a0b9daa641813baac6a (col - resources.id (workspace))
         # env_72323603fe964ca5a001487d84200402 (env - resources.id (environment))
+      - name: Run script 5
         run: inso run test req_6ee84fa004a44a0b9daa641813baac6a --env env_72323603fe964ca5a001487d84200402 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
+      - name: Run script 6
+        run: inso run collection req_6ee84fa004a44a0b9daa641813baac6a --env env_72323603fe964ca5a001487d84200402 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
 
         # run: inso run test wrk_90837a2c267749558521976f34c2b06b --env env_72323603fe964ca5a001487d84200402 --workingDir /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data --verbose --ci
         # run: inso run test Tadeu-QualityEagles-Collection.json --env Tadeu-QualityEagles-Globals.json --workingDir ./insomnia-data --verbose --ci
