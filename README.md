@@ -1,15 +1,23 @@
-# Sample Postman Newman
+# Quality Eagles API Project
 
-This project is intended to showcase how to run Postman collection scripts on Docker using Newman. In order to simplify things, the API we are going to run is already built and usually used for testing purposes. For more detailed information about the API responses, please refer to the [official JSONPlaceholder documentation](https://jsonplaceholder.typicode.com/).
+This project is intended to showcase how to run the API collection created during the initial sprints of the TQC program of the QA Coders academy.
 
 
 ## API Overview
 
-| Endpoint Name | Method | URL                                    | Description                  |
-|---------------|--------|----------------------------------------|------------------------------|
-| Get Users     | GET    | `https://jsonplaceholder.typicode.com/users` | Retrieves a list of users.   |
-| Get Posts     | GET    | `https://jsonplaceholder.typicode.com/posts` | Retrieves a list of posts.   |
-
+PBI
+| Login de acesso
+| Lista de Cadastro de Usuários  
+| Get Posts
+| Editar Cadastro de Usuário
+| Excluir Cadastro de Usuário
+| Novo Cadastro de Empresa
+| Lista Cadastro de Empresa
+| Editar dados de Endereço da Empresa
+| Contagem de Empresas
+| Consultar empresa por ID
+| Atualizar o Status da Empresa
+| Excluir Cadastro de Empresa
 
 ## Postman Sample Collection
 
