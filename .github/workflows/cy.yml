@@ -93,7 +93,7 @@ jobs:
       # - name: Print inso printOptions
       #   run: inso --printOptions
       - name: Print testesteststestestes
-        run: ls -la ~/insomnia-data
+        run: ls -la /home/runner/work/eagles-postman-newman/eagles-postman-newman/insomnia-data
 
       - name: Print inso help
         run: inso --help
